@@ -50,8 +50,10 @@ function sendCL(contact, userList) {
     console.log(`LINE送信完了 → ${contactName}: ${lineId}`);
   } else if (email) {
     // TODO: liffnoURLはお客様側で新規作成いただいたログインAPIのリンクを設定ください
+    // const inviteText = `LINE連携の手続きはこちら（次回以降LINEにて通知をお送りします）\n\n` +
+    //   `▶ https://liff.line.me/2007402756-opA2x8xg/?id=${idValue}`;
     const inviteText = `LINE連携の手続きはこちら（次回以降LINEにて通知をお送りします）\n\n` +
-      `▶ https://liff.line.me/2007402756-opA2x8xg/?id=${idValue}`;
+      `▶ https://liff.line.me/2007492708-7Dpan89p/?id=${idValue}`;
     GmailApp.sendEmail(email, 'LINE連携の手続き', inviteText);
     console.log(`メール送信完了 → ${contactName}: ${email}`);
   } else {
